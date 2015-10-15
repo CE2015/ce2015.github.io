@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+
+body {
+	margin: 0;
+	background: url("Images/background.jpg") black;
+	background-size: 100% 1000px;
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+}
+.logo{
+	text-align: center;
+}
+
+/* Navigation Menu */
+
+div.nav {
+	background-color: #ececf2;
+	padding: 0 20px;
+}
+
+div.nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+div.nav ul li {
+	list-style: none;
+	float: left;
+}
+
+div.nav ul li a:link,
+div.nav ul li a:visited {
+	display: block;
+	font-size: 90%;
+	padding: 10px 25px 10px 0;
+	color: #305782;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+	div.nav ul li {
+		float: none;
+		border-bottom: 2px solid #d5dce4;
+	}
+
+	div.nav ul li:last-child {
+		border-bottom: none;
+
+	}
+}
+
+.clearfix:before, .clearfix:after {content: ""; display: table; }
+.clearfix:after {clear:both;}
+.clearfix { *zoom : 1;}
